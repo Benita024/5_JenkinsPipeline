@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Archive'){
       steps{
-        archiveArtifacts archive: '*.class', fingerprint: true
+        archiveArtifacts artifacts: '*.class', fingerprint: true
       }
     }
   }
