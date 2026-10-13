@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Archive'){
       steps{
-        bat 'archiveArtifacts archive: '*.class', fingerprint: true'
+        archiveArtifacts archive: '*.class', fingerprint: true
       }
     }
   }
